@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<!-- 可以将js代码编写到外部的js文件中 -->
+	<!-- 写到外部文件中可以在不同页面中引用，也可以利用浏览器的缓存机制，推荐使用 -->
+	<script type="text/javascript" src="js/script.js">
+		// 可以将js代码编写到script标签中
+		// alert('我是JavaScript')
+	</script>
+
+	<!-- 一个script标签一旦引用文件，内部就不能再编写JavaScript了，只能新建一个script -->
+	<script type="text/javascript">
+		alert('我是内部标签')
+	</script>
+</head>
+<body>
+
+	<!-- js虽然可以写在标签的属性中，但是耦合代码不利于维护，不推荐使用 -->
+
+	<!-- 可以将js代码编写到标签的onclick属性中 -->
+	<button onclick="alert('点击事件触发')">button</button>
+
+	<!-- 可以将js代码写在超链接的href属性中 -->
+	<a href="javascript:alert('文字点击事件触发')">这里是文字点击区域</a>
+	<a href="javascript:;>这里是文字点击区域">第二个文字点击区域</a>
+
+</body>
+</html>
