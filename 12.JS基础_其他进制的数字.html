@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+		/*
+			十六进制
+			a=0x10;
+			a=0xff;
+			a=0xCafe;
+
+			八进制
+			a=070
+			a=077
+
+			二进制
+			a=0b10
+
+			像"070"这种字符串，有的浏览器会当成八进制进行解析，有些会当成十进制进行解析
+		
+		*/
+		a = "070"
+		console.log(typeof a)
+		console.log(a)
+
+		a = parseInt(a,8)
+		console.log(typeof a)
+		console.log(a)
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

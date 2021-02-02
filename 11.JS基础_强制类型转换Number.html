@@ -3,8 +3,78 @@
 <head>
 	<title></title>
 	<script type="text/javascript">
+		/**
+		 数字|字符串|布尔值|Null|Undefined|Object
 		
+		 将其他数据类型转换为Number
+		 	转换方式一：
+		 		使用Number()函数
+		 			·当参数为字符串时
+		 				1、如果是纯数字的字符串，直接转换为数字
+		 				2、如果字符串中有非数字的内容，则转换为NaN
+		 				3、如果字符串是一个空串或者空格，则返回0
+				 	·当参数为布尔值时
+					  	1、true 为 1
+					 	2、false 为 0
+					·当参数是数字时
+						1、不变
+					·当参数是Null时
+						1、转换为0
+					·当参数是undefined时
+						1、转换为NaN
+					·当参数是object时
+						1、转换为NaN
+
+			转换方式二：
+				parseInt() 把一个字符串转换为整数
+					parseInt()可以将一个字符串中的有效整数取出，然后转换为Number
+				parseFloat() 把一个字符串转换为浮点数
+					parseFloat()作用和parseInt()类似，不同的是它可以获得有效的小数
+
+				parseInt()和parseFloat()对非String使用时，先将其转换为String，然后进行处理
+
+		**/
+
+
+
+
+
+		var a = "  "
+		// console.log(typeof a)
+		// console.log(a)
+		a = Number(a)
+		// console.log(typeof a)
+		// console.log(a)
+
+		//a是布尔值时
+		a = false
+		// console.log(typeof a)
+		// console.log(a)
+
+		// a = Number(a)
+		// console.log(typeof a)
+		// console.log(a)
+
+		a = 1.111
 		
+		a = null
+
+		a = undefined
+
+		a = Object
+
+		a = "a134px"
+
+		a = true
+
+		a = "070"
+		console.log(typeof a)
+		console.log(a)
+
+		a = Number(a)
+		console.log(typeof a)
+		console.log(a)
+
 	</script>
 </head>
 <body>

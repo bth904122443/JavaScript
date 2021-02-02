@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+		/*
+			将其他数据类型转换为Boolean
+				使用Boolean()函数
+					1、参数为数字，除了0和NaN，其余都是true
+					2、参数为字符串，除了空串，其余都为true
+					3、参数为null和undefined，转换为false
+					4、对象会转换为true
+		*/
+
+		a = 0.111
+
+		a = {"name":"wangjing"}
+		console.log(typeof a)
+		console.log(a)
+
+		a = Boolean(a)
+		console.log(typeof a)
+		console.log(a)
+	</script>
+</head>
+<body>
+
+</body>
+</html>
