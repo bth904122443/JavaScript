@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+		/*
+
+		从键盘输入小明的期末成绩;
+		当成绩为100时，奖励一辆BMW;
+		当成绩为[80-99]时，奖励一台iphone;
+		当成绩为[60-80]时，奖励一本参考书;
+		其他成绩，什么也没有;
+		
+		prompt()可以弹出一个带有文本框的提示框，用户输入的内容可以通过变量赋值取出。
+		*/
+
+		// var a = prompt("请输入成绩")
+		// if(a > 100 || a < 0 || isNaN(a)){
+		// 	alert("成绩为输入0~100之间的整数")
+		// }else{
+		// 	if(a == 100){
+		// 		alert("奖励BMW一台");
+		// 	}else if(a > 80 && a <= 99){
+		// 		alert("奖励一台Iphone");
+		// 	}else if(a > 60 && a <= 80){
+		// 		alert("奖励一本参考书");
+		// 	}else{
+		// 		alert("什么都没有")
+		// 	}
+		// }
+		
+
+		/*
+
+		高：180cm以上; 富：1000w以上; 帅：500分以上;
+		如果这三个条件同时满足，则"我一定要嫁给他！"
+		如果三个条件有一个满足，则"嫁吧，比上不足比下有余".
+		如果三个条件都不满足，则"不嫁！"
+
+		*/
+
+		// var height = prompt("请输入身高/米"), money = prompt("请输入存款/万"), face = prompt("请输入颜值分/分");
+		// if(height > 180 && money > 1000 && face > 500){
+		// 	alert("我一定要嫁给他！");
+		// }else if(height > 180 || money > 1000 || face > 500){
+		// 	alert("嫁吧，比上不足比下有余");
+		// }else{
+		// 	alert("不嫁！")
+		// }
+
+
+		/*
+
+		编写程序，由键盘输入三个整数分别存入变量num1、num2、num3;
+		对他们进行由小到大的排序并输出
+		*/
+
+		var n1 = prompt("输入第一个数字"), n2 = prompt("输入第二个数字"), n3 = prompt("输入第三个数字");
+	
+		if(n1 < n2 && n1 < n3){   //如果n1最小
+			if(n2 < n3){  //如果n3最大
+				alert(n1+n2+n3)
+			}else if(n3 < n2){ //如果n2最大
+				alert(n1+n3+n2)
+			}else{		//如果n2与n3相等
+				alert(n1+n2+n3)
+			}
+			
+		}else if(n2 < n1 && n2 < n3){  //如果n2最小
+			if(n1 < n3){  //如果n3最大
+				alert(n2+n1+n3)
+			}else if(n3 < n1){  //如果n1最大
+				alert(n2+n3+n1)
+			}else{		//如果n1与n3相等
+				alert(n2+n1+n3)
+			}
+		}else if(n3 < n1 && n3 < n2){  //如果n3最小
+			if(n1 < n2){  //如果n2最大
+				alert(n3+n1+n2)
+			}else if(n2 < n1){  //如果n1最大
+				alert(n3+n2+n1)
+			}else{    //如果n1与n3相等
+				alert(n3+n1+n2)
+			}
+		}else{
+			alert(n1+n2+n3)
+		}  //三个数相等
+	</script>
+</head>
+<body>
+
+</body>
+</html>
