@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+		/*
+
+		循环语句
+			通过循环语句可以反复的执行一段代码
+
+		while循环
+			-语法：
+
+				while(条件表达式){
+					语句...;
+				}
+			-while语句在执行时，先对条件表达式进行求值判断
+				如果值为true，则执行循环体，循环体执行完毕后，继续对表达式进行判断
+				如果依旧为true则继续执行循环体，以此类推
+				如果值为false，则终止循环
+				可以使用break来终止循环
+
+			创建一个循环，往往需要三个步骤：
+
+			1、初始化一个变量
+				var n = 1;
+			2、设置条件表达式
+				while(n < 1){
+					alert("hello");
+
+					3、定义一个更新表达式，每次更新初始化变量
+					n++;
+				}
+			
+			*/
+		var num = 1;
+
+		while(num < 101){
+			document.write(num + "<br />");
+			num++
+		}
+		
+
+		/*
+
+		do...while循环
+			-语法：
+				do{
+					语句...;
+				}while(条件表达式);
+		-执行流程：
+			do...while语句在执行时，会先执行循环体，
+				循环体执行完毕以后，会对while后的条件表达式进行判断，
+				如果为true，则继续执行循环，执行完毕后继续判断，一次类推，
+				如果为false，则终止循环。
+			do...while可以保证循环体至少执行一次。
+		*/
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

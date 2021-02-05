@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+		/*
+
+		
+		*/
+
+		//对于成绩大于等于60分的，输出'成绩合格'，低于60分的，输出不合格
+
+		// var num = prompt("请输入成绩")
+
+		// switch(parseInt(num/10)){
+		// 	case num = 10:
+		// 	case num = 9:
+		// 	case num = 8:
+		// 	case num = 7:
+		// 	case num = 6:
+		// 		alert("成绩合格");
+		// 		break;
+		// 	case num = 5:
+		// 	case num = 4:
+		// 	case num = 3:
+		// 	case num = 2:
+		// 	case num = 1:
+		// 	case num = 0:
+		// 		alert("成绩不合格");
+		// 		break;
+		// 	default:
+		// 		alert("请输入0~100的纯数字")
+		// }
+
+		// switch(true){
+		// 	case parseInt(num) >= 60 && parseInt(num) <= 100:
+		// 		alert("成绩合格");
+		// 		break;
+		// 	case parseInt(num) < 60 && parseInt(num) >= 0:
+		// 		alert("成绩不合格");
+		// 		break;
+		// 	default:
+		// 		alert("请输入0~100的纯数字")
+		// }
+
+		//从键盘接收整数参数，如果该数为1-7，打印对应的星期，否则打印非法参数
+
+		var num = prompt("请输入参数");
+
+		switch(true){
+			case parseInt(num) >= 1 && parseInt(num) <= 7:
+				alert("星期"+parseInt(num));
+				break;
+			default:
+				alert("非法参数")
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
