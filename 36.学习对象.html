@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+		//对象属于一种符合的数据类型，在对象中可以保存多个不同数据类型的属性；
+
+		//对象的类型：
+		
+		/*
+			1、内建对象
+				-由ES标准中定义的对象，在任何ES的实现中都可以使用;
+				-比如Math String Number Boolean Function Object···
+			2、宿主对象
+				-由JS的运行环境提供的对象，目前来讲主要由浏览器提供的对象
+				-比如BOM DOM
+			3、自定义对象
+				-由开发人员自己创建的对象
+			
+
+		创建对象
+
+			使用new关键字调用的函数，是构造函数constructor
+			构造函数是专门来创建对象的函数;
+			使用typeof检查一个对象时，会返回object;
+
+		*/
+		var obj = new Object();
+
+		console.log(obj);
+		console.log(typeof obj);
+
+		/*
+			在对象中保存属性;
+			读取对象的属性;
+		*/
+		obj.name = "孙悟空";
+		console.log(obj.name)
+
+		/*
+			读取对象没有的属性，不会报错，而是会返回undefined;
+			删除对象的属性;
+		*/
+		delete obj.name
+		console.log(obj.name)
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

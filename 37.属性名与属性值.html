@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+		/*
+			向对象中添加属性：
+				-对象的属性名不强制要求遵守表示符规范
+				-如果需要使用特殊的属性名，可以使用  对象["属性名"] = 属性值
+				-读取时也需要使用这种方式
+	
+		*/
+
+		var obj = new Object();
+		obj["1234*(&%&^*&*^&"] = 123;
+		console.log(obj["1234*(&%&^*&*^&"]);
+
+		/*
+			使用[]这种形式去操作属性，更加灵活，[]中可以传递一个变量，这样变量的值可以作为属性值来使用;
+		*/
+		var n = "123";
+		obj[n] = 123;
+		console.log(obj[n]);
+
+		/*
+			检查对象中是否有某个属性
+				-in 运算符
+		*/
+		console.log("test2" in obj);
+	</script>
+</head>
+<body>
+
+</body>
+</html>
